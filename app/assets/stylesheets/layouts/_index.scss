@@ -4,3 +4,25 @@
 // @import "profile";
 // @import "map";
 @import "cocktails";
+
+.container-title {
+  color: white;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+}
+
+#site-title {
+  font-family: 'Lobster', cursive;
+  font-size: 120px;
+  color: white;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+

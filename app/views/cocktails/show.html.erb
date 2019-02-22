@@ -1,4 +1,5 @@
-<h1><%= @cocktail.name %> show page</h1>
+<h1><%= @cocktail.name %></h1>
+
 
 <% @cocktail.doses.each do |c| %>
 <div class="dose-description">
@@ -6,4 +7,8 @@
   </div>
 <% end %>
 
+
 <%= render "doses/form", cocktail: @cocktail, dose: @dose %>
+
+<%= link_to "Go to index", cocktails_path, class: "btn btn-primary" %>
+
