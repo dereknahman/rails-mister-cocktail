@@ -16,7 +16,7 @@ class DosesController < ApplicationController
   end
 
   def destroy
-    @doses = Doses.destroy_all
+    @dose = Dose.destroy_all
   end
 
   private

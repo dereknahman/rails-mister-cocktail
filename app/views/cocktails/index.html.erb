@@ -1,10 +1,20 @@
-<h1>Testing, testing...</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pour Me Cocktails – Drown Your Sorrows With Us!</title>
+</head>
+<body>
+
+<h1>Cocktails index page</h1>
 
 <ul>
 <% @cocktails.each do |r| %>
-  <li><%= r.name %></li>
+  <li><%= link_to r.name, cocktail_path(r)  %></li>
 <% end %>
 </ul>
 
+<%= link_to "Add a new cocktail", new_cocktail_path %>
 
-<h1><%= @cocktails %></h1>
+
+</body>
+</html>

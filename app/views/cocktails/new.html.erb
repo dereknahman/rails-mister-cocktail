@@ -1,1 +1,10 @@
-<h1>Testing, testing...</h1>
+<h1>New cocktails page</h1>
+
+<!-- has a form to inser a new cocktail into the cocktails index -->
+<!-- also has a link to the index and a link to the show -->
+<%= simple_form_for (@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Add to cocktails list", class: "btn btn-primary" %>
+<% end %>
+
+

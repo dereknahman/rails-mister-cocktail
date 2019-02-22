@@ -1,1 +1,9 @@
-<h1>Testing, testing...</h1>
+<h1><%= @cocktail.name %> show page</h1>
+
+<% @cocktail.doses.each do |c| %>
+<div class="dose-description">
+  <%= c.description %><%= c.ingredient.name %>
+  </div>
+<% end %>
+
+<%= render "doses/form", cocktail: @cocktail, dose: @dose %>
