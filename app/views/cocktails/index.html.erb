@@ -12,13 +12,15 @@
 
   <% @cocktails.each do |r| %>
   <div class="col-md-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80)">
-    <p class="card-category"><%= link_to r.name, cocktail_path(r)  %> <%= link_to "❌", cocktail_path(r), method: :delete %></p>
+    <p class="card-category"><%= link_to r.name, cocktail_path(r) %> <%= link_to "❌", cocktail_path(r), method: :delete %></p>
     </div>
   <% end %>
   </div>
 </div>
 
 <div class="container">
+
+
   <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
 </div>
 

@@ -6,7 +6,9 @@
   </div>
 <% end %>
 
-<%= render "doses/form", cocktail: @cocktail, dose: @dose %>
-
+<%= simple_form_for @cocktail do |f| %>
+<%= f.input :name %>
+<%= f.submit %>
+<% end %>
 
 <%= link_to "Go to index", cocktails_path, class: "btn btn-primary" %>
