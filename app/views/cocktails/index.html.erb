@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h1 class="text-center">Here's our menu...</h1>
+<h1 class="text-center">Choose your poison</h1>
 
 <div class="container">
   <div class="row">
@@ -18,12 +18,11 @@
   </div>
 </div>
 
-<div class="container">
-
-
-  <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+<div class="btn-holder">
+  <div class="add-btn">
+    <%= link_to "Add a new cocktail", new_cocktail_path %>
+  </div>
 </div>
-
 
 </body>
 </html>
