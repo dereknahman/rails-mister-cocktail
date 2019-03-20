@@ -15,7 +15,7 @@
 #site-title {
   font-family: 'Lobster', cursive;
   font-size: 120px;
-  color: white;
+  color: #f1e0de;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -24,6 +24,7 @@
 
 body {
   font-family: 'Arimo', sans-serif;
+  background-color: #f1e0de;
 }
 
 .btn-holder {
@@ -34,7 +35,9 @@ body {
 }
 
 .add-btn a {
-  background-color: #FFFFFF;
+  font-family: 'Arimo', sans-serif !important;
+  background-color: #f1e0de;
+  font-size: 20px !important;
   padding: 16px 25px;
   margin: 15px auto;
   border: none;
@@ -47,9 +50,20 @@ body {
 
 a {
   text-decoration: none !important;
-  color: white;
+  color: #f1e0de;
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
 }
 
 .text-center {
   color: #1F213A;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
 }

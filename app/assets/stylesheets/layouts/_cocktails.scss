@@ -1,13 +1,8 @@
-.dose-description {
-  color: red;
-}
-
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
+  height: 200px;
+  justify-content: space-between;
   align-items: center;
   color: white;
   font-size: 24px;
@@ -19,4 +14,7 @@
 
 .col-md-3 {
   background-size: cover;
+  justify-content: space-between;
+  margin: 44px;
+  width: 40%;
 }
